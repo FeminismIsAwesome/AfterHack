@@ -1,0 +1,14 @@
+<%= form_for @youth_hacker, url: {action: "create"}, html: {class: "nifty_form"} do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :age %>
+  <%= f.text_field :age %>
+  <%= f.label :gender %>
+  <%= f.text_field :gender %>
+  <%= f.label :address %>
+  <%= f.text_field :address %>
+  <%= f.label :category %>
+  <%= f.text_field :category %>
+
+  <%= f.submit "Create" %>
+<% end %>
