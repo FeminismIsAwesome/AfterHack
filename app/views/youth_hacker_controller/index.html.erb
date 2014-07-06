@@ -9,7 +9,7 @@
   </h2>
   <%= link_to image_tag(asset_path("chairdude.png"), :class => "chairdude")  %>
   <br>
-  <%= image_tag(asset_path("youth_hacker.png"), :class => "youthhacker") %>
+  <%= link_to image_tag(asset_path("youth_hacker.png"), :class => "youthhacker"), youth_hacker_new_url) %>
   <div class="carousel">
   	<div class="carouselRow">
   		<%= link_to image_tag(asset_path("developerleft.png"), :class => "buttonSmall"), mentor_new_url %>
