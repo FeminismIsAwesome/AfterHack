@@ -1,8 +1,11 @@
 Rails.application.routes.draw do
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
-  root "youth_hacker_controller#new"
+    root to:  "youth_hacker_controller#index"
+  get "youth/new" => "youth_hacker_controller#new", as: 'youth_hacker_new'
   post "youth" => "youth_hacker_controller#create"
+  post "mentor" => "mentor#create", as: "mentor_create"
+  get "mentor/new" => "mentor#new", as: 'mentor_new'
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 

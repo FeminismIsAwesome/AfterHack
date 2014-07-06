@@ -4,11 +4,13 @@ class YouthHackerControllerController < ApplicationController
     puts params
     youth = YouthHacker.create(params.require(:youth_hacker).permit(:age, :gender, :address, :category, :name))
     all_hackers_matching = Mentor.where(:category => youth.category) 
-    puts all_hackers_matching
+    session[:youth] = youth
   end
 
-  def create_mentor
-    mentor = Mentor.create(params.require(:mentor).permit(:age, :gender, :address, :category, :name))
+  
+
+  def hackers_index
+    @hackers =  Mentor.where(:category => session[:youth].category)
   end
 
   def index
@@ -16,6 +18,10 @@ class YouthHackerControllerController < ApplicationController
 
   def new
     @youth_hacker = YouthHacker.new 
+  end
+
+  def new_mentor
+    @mentor = Mentor.new
   end
 
   def show 
