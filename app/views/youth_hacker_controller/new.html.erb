@@ -1,14 +1,17 @@
-<div class="containerYouthPage">
-  
+<div class="containerDevPage" style="height:800px;" >
+
+<div>
+<%= image_tag(asset_path('youth_info.png'), :style => "float:left;") %>
 <%= form_for @youth_hacker, url: {action: "create"}, html: {class: "nifty_form"} do |f| %>
-  <div >
+<div >
+<div style="margin-bottom: 100px;"></div>
+<br>
+<br>
+<form align="center" style="padding-top: 45%;">
+<div >
   <%= f.label :name %>
   <%= f.text_field :name %>
 </div>
- <div >
-  <%= f.label :age %>
-  <%= f.text_field :age %>
-  </div>
   <div >
   <%= f.label :gender %>
   <%= f.text_field :gender %>
@@ -25,8 +28,11 @@
   <%= f.label :project_name %>
   <%= f.text_field :projectname %>
   </div>
-  <%= f.submit "Create" %>
-<% end %>
 
+  <%= f.submit "Create" %>
+  </div>
+<% end %>
 </div>
-  
+</div>
+</form>
+</div>

@@ -1,6 +1,8 @@
-<div class="containerDevPage" style="height:800px;" >
 
+<div>
+<%= image_tag(asset_path('dev_info.png'), :style => "float:left;") %>
 <%= form_for @mentor, url: {action: "create"}, html: {class: "nifty_form"} do |f| %>
+<div style="">
 <div style="margin-bottom: 100px;"></div>
 <br>
 <br>
@@ -23,6 +25,8 @@
   </div>
 
   <%= f.submit "Create" %>
+  </div>
 <% end %>
+</div>
 </div>
 </form>
