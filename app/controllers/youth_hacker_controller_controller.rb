@@ -1,6 +1,7 @@
 class YouthHackerControllerController < ApplicationController
 
   def email_something(hacker)
+    puts "i emailed something!"
     AfterHackMailer.alert(hacker)
   end
 
