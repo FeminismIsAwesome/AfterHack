@@ -1,9 +1,10 @@
 <div class="containerDevPage" style="height:800px;" >
 
 <%= form_for @mentor, url: {action: "create"}, html: {class: "nifty_form"} do |f| %>
-<div style="margin-bottom: 80px;"></div>
+<div style="margin-bottom: 100px;"></div>
 <br>
 <br>
+<form align="center" style="padding-top: 45%;">
 <div >
   <%= f.label :name %>
   <%= f.text_field :name %>
@@ -24,3 +25,4 @@
   <%= f.submit "Create" %>
 <% end %>
 </div>
+</form?
