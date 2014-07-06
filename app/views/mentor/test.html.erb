@@ -1,0 +1,22 @@
+<! DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Welcome to afterhack.com, <%= @hacker.name %></h1>
+    <p>
+      There are new youth hacker projects that you may be interested in.
+    </p>
+    <% @youthHackers.each do |hacker| %>
+      <%= hacker.name %>
+      <%= hacker.age %>
+      <%= hacker.category %>
+      <%= hacker.tech %>
+      <%= hacker.projectname %>
+    <% end %>
+    
+    <p>Thanks for joining and have a great day!</p>
+  </body>
+</html>
+

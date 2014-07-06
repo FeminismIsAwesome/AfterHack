@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   post "mentor" => "mentor#create", as: "mentor_create"
   get "mentor/new" => "mentor#new", as: 'mentor_new'
   get "registered" => "youth_hacker_controller#registered", as: "registered"
+  get "email/test" => "mentor#test"
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 

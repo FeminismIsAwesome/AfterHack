@@ -10,4 +10,10 @@ def create
     def new
     @mentor = Mentor.new
   end
+
+  def test
+    @hacker = Mentor.first
+    @youthHackers = YouthHacker.all
+    
+  end
 end
