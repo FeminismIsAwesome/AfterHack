@@ -1,3 +1,5 @@
+<div class="container">
+  
 <%= form_for @youth_hacker, url: {action: "create"}, html: {class: "nifty_form"} do |f| %>
   <div >
   <%= f.label :name %>
@@ -25,4 +27,6 @@
   </div>
   <%= f.submit "Create" %>
 <% end %>
+
+</div>
   
