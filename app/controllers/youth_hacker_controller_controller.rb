@@ -1,6 +1,7 @@
 class YouthHackerControllerController < ApplicationController
 
   def email_something(hacker)
+    AfterHackMailer.alert(hacker)
   end
 
   def create 
@@ -12,7 +13,7 @@ class YouthHackerControllerController < ApplicationController
           email_something(hacker)
         end
     end
-
+    redirect_to registered_url
   end
 
   

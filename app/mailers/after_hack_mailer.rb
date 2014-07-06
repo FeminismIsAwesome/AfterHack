@@ -1,7 +1,8 @@
 class AfterHackMailer < ActionMailer::Base
   default from: "afterhack@afterhack.com"
-  def alert_email(user)
+  def alert(user)
     @hacker = user
+    @youthHackers = YouthHacker.all
     mail(to: @hacker.address, subject: "New youth mentors are available!")
     
   end
