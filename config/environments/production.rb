@@ -81,6 +81,8 @@ Rails.application.configure do
       :domain         => 'heroku.com',
       :enable_starttls_auto => true
   }
+    config.action_mailer.asset_host = "http://afterhack.herokuapp.com/"
+
 
 
   # Disable automatic flushing of the log to improve performance.
