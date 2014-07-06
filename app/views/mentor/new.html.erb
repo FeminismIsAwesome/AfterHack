@@ -1,13 +1,20 @@
 <%= form_for @mentor, url: {action: "create"}, html: {class: "nifty_form"} do |f| %>
+<div>
   <%= f.label :name %>
   <%= f.text_field :name %>
-
+</div>
+  <div >
   <%= f.label :gender %>
   <%= f.text_field :gender %>
-  <%= f.label :address %>
+  </div>
+  <div>
+  <%= f.label :email_address %>
   <%= f.text_field :address %>
+  </div>
+  <div>
   <%= f.label :category %>
   <%= f.text_field :category %>
+  </div>
 
   <%= f.submit "Create" %>
 <% end %>

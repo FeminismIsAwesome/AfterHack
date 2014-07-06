@@ -1,2 +1,28 @@
-<%= link_to "Are you a youth hacker?", youth_hacker_new_url %>
-<%= link_to "Are you a mentor?", mentor_new_url %>
+
+
+
+
+<div>
+  <h2>
+  	Finishing what hackathons started- for youth
+  </h2>
+  <link_to chairdude>
+  <%= link_to image_tag(asset_path("youth_hacker.png"), :class => "youthhacker"), youth_hacker_new_url %>
+  <div class="carousel">
+  	<div class="carouselRow">
+  		<%= link_to image_tag(asset_path("developerleft.png"), :class => "buttonSmall"), mentor_new_url %>
+		<%= link_to image_tag(asset_path("developer.png"), :class => "buttonYouth"), mentor_new_url %>
+		<%= link_to image_tag(asset_path("innovater.png"), :class => "buttonYouth"), mentor_new_url %>
+  		<%= link_to image_tag(asset_path("innovaterright.png"), :class => "buttonSmall"), mentor_new_url %>
+  	</div>
+  	<div class="carouselRow">
+
+  		<%= link_to image_tag(asset_path("designerleft.png"), :class => "buttonSmall"), mentor_new_url %>
+  		<%= link_to image_tag(asset_path("designer.png"), :class => "buttonYouth"), mentor_new_url %>
+		<%= link_to image_tag(asset_path("sponser.png"), :class => "buttonYouth"), mentor_new_url %>
+		<%= link_to image_tag(asset_path("sponserright.png"), :class => "buttonSmall"), mentor_new_url %>
+
+  	</div>
+  	
+  </div>
+</div>
