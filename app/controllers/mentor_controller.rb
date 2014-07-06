@@ -1,6 +1,6 @@
 class MentorController < ApplicationController
 def create
-    mentor = Mentor.create(params.require(:mentor).permit(:age, :gender, :address, :category, :name))
+    mentor = Mentor.create(params.require(:mentor).permit(:age, :gender, :address, :category, :name, :tech))
     session[:mentor] = mentor
   end
   def index
